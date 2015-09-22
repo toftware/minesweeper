@@ -240,6 +240,7 @@ jQuery(function ($) {
             if (obj.mine) {
                 // game over
                 self.gameOver(cell);
+				crash();
                 return;
             }
 

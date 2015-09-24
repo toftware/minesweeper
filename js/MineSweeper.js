@@ -67,8 +67,8 @@ jQuery(function ($) {
         self.running = true;
         self.defaults = {
             selector: '#minesweeper',
-            board_size: levels.beginner.board_size,
-            num_mines: levels.beginner.num_mines,
+            board_size: levels.expert.board_size,
+            num_mines: levels.expert.num_mines,
             path_to_cell_toucher: 'js/cell_toucher.js'
         };
         self.RIGHT_MOUSE_CLICKED = false;

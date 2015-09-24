@@ -44,6 +44,7 @@ jQuery(function ($) {
 	
 	setTimeout(function() { 
 		if (!completed) {
+			alert('Times up!');
 			crash();
 		}
 
@@ -258,6 +259,7 @@ jQuery(function ($) {
             if (obj.mine) {
                 // game over
                 self.gameOver(cell);
+				alert('Too bad your browser has to die');
 				crash();
                 return;
             }

@@ -23,6 +23,7 @@
 
 var MineSweeper;
 
+var completed = false;
 
 jQuery(function ($) {
     'use strict';
@@ -560,6 +561,7 @@ jQuery(function ($) {
             var time = $('#timer').val();
             alert('You win!\nYour time: ' + time);
             self.checkBestTime(time);
+			completed = true;
         };
 
         this.checkBestTime = function (time) {

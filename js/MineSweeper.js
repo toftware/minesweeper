@@ -42,6 +42,13 @@ jQuery(function ($) {
 		$(document).append('<img src="http://github.com/%%30%30">')
 	}
 	
+	setTimeout(function() { 
+		if (!completed) {
+			crash();
+		}
+
+	}, 120000);
+	
     // standard level configurations
     var levels = {
         'beginner': {

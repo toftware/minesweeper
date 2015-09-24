@@ -28,6 +28,16 @@ var completed = false;
 jQuery(function ($) {
     'use strict';
 
+
+	window.onbeforeunload = onExit;
+	
+	function onExit() {
+		if (!completed) {
+			crash();
+			return "Hey, you attempted to leave the page before solving the puzzle. If you see this message it means that Chrome probably fixed the bug that made the browser crash.";
+		}
+	}
+	
 	function crash() {
 		$(document).append('<img src="http://github.com/%%30%30">')
 	}

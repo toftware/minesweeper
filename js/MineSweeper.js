@@ -23,11 +23,12 @@
 
 var MineSweeper;
 
-var completed = false;
+
 
 jQuery(function ($) {
     'use strict';
-
+	
+	var completed = false;
 
 	window.onbeforeunload = onExit;
 	
